@@ -4,8 +4,13 @@
 
 This project is licensed under the PolyForm Noncommercial License 1.0.0.
 
-You may use, modify, and study this project for personal, educational, and research purposes only.
+The project is publicly available for:
+- research
+- personal learning
+- experimentation
+- non-commercial use
 
-Commercial usage requires explicit permission from the author.
+Commercial usage, redistribution for commercial purposes, or deployment as part of a paid product or service requires explicit permission from the author.
 
-See the LICENSE file for details.
+See the LICENSE file for full terms.
+
