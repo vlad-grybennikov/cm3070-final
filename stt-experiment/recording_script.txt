@@ -1,0 +1,71 @@
+STT EXPERIMENT — RECORDING SCRIPT
+=================================
+
+HOW TO RECORD
+-------------
+- Record one clip per line below. Speak naturally, at the pace you'd use
+  when actually talking to the app.
+- Save each clip as WAV, 16 kHz mono if you can (any WAV works).
+- Name the files EXACTLY p01.wav ... p15.wav and put them in:
+      stt-experiment/speech_files/
+- The reference text the WER is scored against is the line after each ID.
+  Read it verbatim (the experiment normalises case/punctuation, so don't
+  worry about commas — just say the words in order).
+- Quick way to record on Mac:
+      QuickTime Player > File > New Audio Recording  (then export)
+  or, from the terminal with sox installed:
+      rec -r 16000 -c 1 speech_files/p01.wav
+
+WHY THESE LINES
+---------------
+They are deliberately entity-dense: real business names, target audiences,
+goals and calls-to-action. Smaller Whisper models tend to mangle proper
+nouns and rare words while still scoring "okay" on common words — these
+clips expose exactly that failure mode, which is the interesting result.
+
+---------------------------------------------------------------------------
+
+p01
+create a landing page for Maria's Bakery targeting young families
+
+p02
+build a page for Apex Plumbing aimed at homeowners to collect quote requests
+
+p03
+make a landing page for GreenLeaf Yoga Studio for busy professionals
+
+p04
+I want a site for Nordvik Dental Clinic with a button to book an appointment
+
+p05
+design a page for Lumina Photography to showcase wedding portfolios and take bookings
+
+p06
+launch a landing page for CodeForge Academy promoting a twelve week coding bootcamp
+
+p07
+set up a page for Bella Vista Trattoria so customers can reserve a table online
+
+p08
+create a page for PetPals Grooming targeting dog owners in Brighton
+
+p09
+build a landing page for Aurora Fitness offering a free seven day trial membership
+
+p10
+make a site for Hendricks and Pearce Law Firm focused on small business clients
+
+p11
+I need a page for Saffron and Sage Catering for corporate events and weddings
+
+p12
+create a landing page for QuantumLeap Analytics selling a subscription dashboard to startups
+
+p13
+build a page for Willowbrook Veterinary Hospital with an emergency contact number
+
+p14
+design a page for Echo Sound Studios renting rehearsal rooms to local bands
+
+p15
+make a landing page for Verdant Landscaping offering free garden consultations to collect leads

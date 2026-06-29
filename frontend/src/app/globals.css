@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+/*
+ * Force a light theme. `dark:` utilities only apply under an explicit `.dark`
+ * class (which we never add), so the OS dark-mode preference can't darken the UI.
+ */
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  /* Indigo + slate theme. */
+  --background: #ffffff;
+  --foreground: #0f172a; /* slate-900 */
+
+  --primary: #4f46e5; /* indigo-600 */
+  --primary-strong: #4338ca; /* indigo-700 (hover/deep) */
+  --primary-light: #818cf8; /* indigo-400 */
+  --primary-foreground: #f8fafc; /* slate-50 */
+
+  --accent: #4338ca; /* indigo-700 for conversion CTAs */
+  --accent-foreground: #f8fafc;
+
+  --muted: #f8fafc; /* slate-50 surfaces */
+  --muted-foreground: #64748b; /* slate-500 */
+
+  --border: #e2e8f0; /* slate-200 */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-strong: var(--primary-strong);
+  --color-primary-light: var(--primary-light);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --font-sans: var(--font-open-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+}
+
+/* Indeterminate progress bar: a segment that slides across its track. */
+@keyframes progress-slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(320%);
+  }
+}
+.animate-progress-slide {
+  animation: progress-slide 1.1s ease-in-out infinite;
+}
